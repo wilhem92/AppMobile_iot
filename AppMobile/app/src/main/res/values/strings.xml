@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppDev</string>
+    <string name="bienvenue_mess">Bienvenue</string>
+    <string name="commencer_mess">Commencer</string>
+    <string name="footer_mess">IT Application</string>
+    <string name="choix_mess">Choisissez un appareil</string>
+    <string name="clique_mess">Choisir</string>
+    <string name="allumer_mess">Allumer</string>
+    <string name="eteindre_mess">Eteindre</string>
+    <string name="choix_option_mess">Choisissez une option</string>
+    <string name="sign_up">Inscription</string>
+    <string name="full_name">Nom Complet</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">Téléphone</string>
+    <string name="register">Enregistrer</string>
+    <string name="already_register">Déjà Enregistré ? Connectez-vous ici</string>
+    <string name="login">Connexion</string>
+    <string name="deconnexion">Déconnexion</string>
+    <string name="register_here">Inscription ici</string>
+</resources>

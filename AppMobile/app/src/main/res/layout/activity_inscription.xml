@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_dark"
+    tools:context=".Inscription">
+
+    <TextView
+        android:id="@+id/inscription_SignUp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/inscription_fullName_et"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_below="@id/inscription_SignUp_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="@string/full_name"
+        android:background="@color/dark"
+        android:textColorHint="@color/yellow"
+        android:textColor="@color/yellow"
+        android:drawableLeft="@drawable/ic_action_user"/>
+
+    <EditText
+        android:id="@+id/inscription_email_et"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_below="@id/inscription_fullName_et"
+        android:layout_alignStart="@id/inscription_fullName_et"
+        android:layout_alignLeft="@id/inscription_fullName_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:hint="@string/email"
+        android:background="@color/dark"
+        android:textColorHint="@color/yellow"
+        android:textColor="@color/yellow"
+        android:drawableLeft="@drawable/ic_action_mail"/>
+
+
+    <EditText
+        android:id="@+id/inscription_password_et"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_below="@id/inscription_email_et"
+        android:layout_alignStart="@id/inscription_email_et"
+        android:layout_alignLeft="@id/inscription_email_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:background="@color/dark"
+        android:textColorHint="@color/yellow"
+        android:textColor="@color/yellow"
+        android:drawableLeft="@drawable/ic_action_pass"/>
+
+    <EditText
+        android:id="@+id/inscription_phone_et"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_below="@id/inscription_password_et"
+        android:layout_alignStart="@id/inscription_password_et"
+        android:layout_alignLeft="@id/inscription_password_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:hint="@string/phone"
+        android:background="@color/dark"
+        android:textColorHint="@color/yellow"
+        android:textColor="@color/yellow"
+        android:drawableLeft="@drawable/ic_action_phone"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/inscription_phone_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        app:cardBackgroundColor="@color/yellow"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/inscription_login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/register"
+                android:textColor="@color/grey_dark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/inscription_loginMe_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inscription_phone_et"
+        android:layout_marginTop="170dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/already_register"
+        android:textColor="@color/yellow" />
+
+    <ProgressBar
+        android:id="@+id/inscription_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inscription_loginMe_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
